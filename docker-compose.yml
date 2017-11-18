@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+
+  python_pandas:
+    build: 
+      context: .
+    volumes:
+      - .:/app
+      - $HOME/.aws:/root/.aws
+    environment:
+      - AWS_DEFAULT_REGION=ap-southeast-2
